@@ -31,7 +31,7 @@ func main() {
 
 # Build Process
 
-//GO source -- SSA (OPtimization) constasts Dead Code asmbler  plan 
+//GO source --> Go compiler  --> SSA (OPtimization) constasts Dead Code Elimination -->  asmbler  plan9assembler ass0--> .o file ---> linker --> links all required files , memory mappings--> bin (static binary )
   
 
 -java source -->javaCompiler --> javabyte code --> JVM --> loads byte code ---> jIT compilaton
@@ -56,3 +56,7 @@ go run -work main.go
 # Go compile link 
 
 go tool 
+
+
+## debug build vs release Build  --> nm tool 
+ go build -o demo main 
